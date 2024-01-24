@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotate Image Example</title>
+    <style>
+      .imageContainer {
+        width: 180px;
+        height: 200px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.7s;
+        /* tansition: CSS-property, duration, speed (optional, default is 'ease') */
+        /* You must first specify which CSS property you want to add an effect to, and then the duration of the effect
+        https://www.w3schools.com/css/css3_transitions.asp
+         */
+      }
+      img:hover {
+        transform: rotate(10deg);
+      }
+      img a:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="imageContainer">
+      <img src="plant.png" alt="an image of a houseplant" />
+    </div>
+  </body>
+</html>

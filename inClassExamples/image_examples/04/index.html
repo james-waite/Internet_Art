@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .relative {
+            position: relative;
+        }
+        .absolute {
+            position: absolute;
+
+        }
+        #regular {
+            top: 150px;
+            left: 150px;
+            /* z-index: 2; */
+        }
+        #inverted {
+            top: 75px;
+            left: 75px;
+            /* z-index: 1; */
+            filter: invert(1)
+        }
+
+    </style>
+</head>
+<body>
+    <div class="relative">
+        <img class="absolute" id="regular" src="../images/droopPanelDocu_01_SMALL.jpg" />
+        <img class="absolute" id="inverted"src="../images/droopPanelDocu_01_SMALL.jpg" />
+
+    </div>
+</body>
+</html>

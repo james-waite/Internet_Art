@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Centered Div</title>
+    <style>
+      #container {
+        justify-content: center; /* aligns block elements horizontally */
+        align-items: center; /* aligns block elements vertically */
+        text-align: center; /* aligns text elements */
+        width: 500px;
+        height: 500px;
+        margin: 0 auto; /* the first item "0" sets the top and bottom margins, while the second item "auto" tells the browser to automatically determine the left/right margins within that element's parent container */
+        outline: dashed 1px black;
+      }
+      #container h2 {
+        padding: 25px;
+        border: dotted 5px red;
+      }
+      #tealBox {
+        position: relative; /* the parent element of a child element with position: absolute; needs position: relative; if you want to keep the child element inside of the parent element */
+        margin: 10px auto;
+        width: 300px;
+        height: 300px;
+        background-color: rgb(145, 237, 191);
+      }
+      #redBox {
+        position: absolute; /* Set the position of this element by determining it's distance from the top/right/bottom/left */
+        width: 40px;
+        height: 40px;
+        bottom: 50px;
+        right: 25px;
+        background-color: rgb(255, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h2>Centered Elements</h2>
+      <div id="tealBox">
+        <div id="redBox"></div>
+      </div>
+    </div>
+  </body>
+</html>

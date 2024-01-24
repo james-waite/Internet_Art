@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Map</title>
+  </head>
+  <body>
+    <h2>Image Maps</h2>
+
+    <img
+      src="../images/droopPanelDocu_01_SMALL.jpg"
+      alt="droop panel"
+      usemap="#workmap"
+      width="303px"
+      height="404px"
+    />
+
+    <map name="workmap">
+      <area
+        shape="rect"
+        coords="75, 24, 175, 370"
+        alt="artwork"
+        href="#"
+        onclick="myFunction()"
+      />
+    </map>
+
+    <script>
+      function myFunction() {
+        alert('You clicked on it!');
+      }
+    </script>
+  </body>
+</html>
