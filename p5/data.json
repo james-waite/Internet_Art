@@ -1,0 +1,15 @@
+{
+    "name": "James",
+    "school": "OSU",
+    "yearGraduation": 2025,
+    "courses": [
+        "Digital Imaging",
+        "Internet Art"
+    ],
+    "object": {
+        "isStudent": true,
+        "currentYear": 2,
+        "greeting": "Hello!!!"
+    },
+    "creditHours": 15
+}
